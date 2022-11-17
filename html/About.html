@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <!-- The script tag links to my js file. The nav is my navbar, the <a> tag with the class "race" and <img> tag is for my logo and home button.
+  <button> with the onclick="myFunction" is where the javascript is used to make the menu dropdown" when i click on it and the <a> tags beneath the button is the links that drops down.  -->
+  <body>
+    <script src="/script.js"></script>
+    <nav class="nav">
+      <a class="race" href="/index.html"><img class="f1" src="/image/f1_logo.png"/></a>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/html/products.html">Products</a>
+          <a href="/html/About.html">About us</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
