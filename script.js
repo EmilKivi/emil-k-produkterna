@@ -23,5 +23,11 @@
         }
       }
 
+  let container = document.querySelectorAll('.add')
 
-      
+
+  for (let i=0; i < container.length; i++ ) {
+    container[i].addEventListener('click',()=>{
+      console.log("added to cart");
+     })
+  }

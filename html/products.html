@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <!-- its the same code used in the index file-->
-    <script src="/script.js"></script>
     <nav class="nav">
       <a class="race" href="/index.html"
         ><img class="f1" src="/image/f1_logo.png"
       /></a>
+     <div class="cart">
+      <i class="bi bi-cart2"></i>
+      <div class="cartAmount">0</div>
+     </div> 
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
@@ -25,34 +32,96 @@
     <!--This creates my boxes where my products is shown img class is for my image-->
     <div class="container">
       <div class="item1">
-        <img class="helmet1" src="/image/racing_helmet1.png" alt="blue racing helmet" />
+        <img class="helmet1" src="/image/racing_helmet1.png""/>
+        <button class="add">
+          <span class="text">$179</span><span>Add to cart</span>
+        </button>
+        <h3>Casual Racing Helmet</h3>
       </div>
-
       <div class="item1">
         <img class="helmet1" src="/image/racing-helmet2.png" />
+        <button class="add">
+          <span class="text">$239</span><span>Add to cart</span>
+        </button>
+        <h3>Max Verstappen Helmet</h3>
       </div>
       <div class="item1">
         <img class="helmet1" src="/image/racing-helmet3.png" />
+        <button class="add">
+          <span class="text">$239</span><span>Add to cart</span>
+        </button>
+        <h3>Lewis Hamilton Helmet</h3>
       </div>
       <div class="item">
-        <img class="helmet1" src="/image/racing_helmet1.png" />
+        <img class="glove" src="/image/Racing-Glove.png" />
+        <button class="add">
+          <span class="text">$99</span><span>Add to cart</span>
+        </button>
+        <h3>Black Glove</h3>
       </div>
       <div class="item">
-        <img class="helmet1" src="/image/racing_helmet1.png" />
+        <img class="glove" src="/image/Racing-Glove2.png" />
+        <button class="add">
+          <span class="text">$99</span><span>Add to cart</span>
+        </button>
+        <h3>White Glove</h3>
       </div>
       <div class="item">
-        <img class="helmet1" src="/image/racing_helmet1.png" />
+        <img class="glove" src="/image/Racing-Glove3.png" />
+        <button class="add">
+          <span class="text">$99</span><span>Add to cart</span>
+        </button>
+        <h3>Blue Glove</h3>
       </div>
       <div class="item">
-        <img class="helmet1" src="/image/racing_helmet1.png" />
+        <img class="suit" src="/image/Racing-suit.png" />
+        <button class="add">
+          <span class="text">$300</span><span>Add to cart</span>
+        </button>
+        <h3>Black Suit</h3>
       </div>
       <div class="item">
-        <img class="helmet1" src="/image/racing_helmet1.png" />
+        <img class="suit" src="/image/Racing-Suit2.png" />
+        <button class="add">
+          <span class="text">$300</span><span>Add to cart</span>
+        </button>
+        <h3>Blue Suit</h3>
       </div>
       <div class="item">
-        <img class="helmet1" src="/image/racing_helmet1.png" />
+        <img class="suit" src="/image/Racing-suit3.png" />
+        <button class="add">
+          <span class="text">$300</span><span>Add to cart</span>
+        </button>
+        <h3>White Suit</h3>
       </div>
     </div>
 
+    <footer>
+      <div class="footeritem">
+        <h3 class="footerh3">Store location</h3>
+        <p>Brompton Banks</p>
+        <p>Winwoods Grove</p>
+        <p>Pipers Copse</p>
+        <p>Twyford Dell</p>
+      </div>
+      <div class="footeritem">
+        <h3>Open hours</h3> 
+        <p>10am-4:30pm</p>
+      </div>
+      <div class="footeritem">
+        <h3 class="footerh3">Contact us</h3>
+        <p>emil.kivi.gbg22@amerikanskagymnasiet.se</p>
+        <p>808-485-4439</p>
+      </div>
+      <div class="footeritem">
+        <h3 class="footerh3">Follow us</h3>
+        <a class="social" href="www.facebook.com">Facebook</a>
+        <br>
+        <a class="social" href="www.instagram.com">Instagram</a>
+        <br>
+        <a class="social" href="www.youtube.com">Youtube</a>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
