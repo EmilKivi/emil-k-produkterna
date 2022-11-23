@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Products</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
@@ -12,24 +12,32 @@
     />
   </head>
   <body>
-    <!-- its the same code used in the index file-->
+    <!-- 
+      Everything is the same to index except the cart.
+    -->
     <nav class="nav">
       <a class="race" href="/index.html"
         ><img class="f1" src="/image/f1_logo.png"
       /></a>
-     <div class="cart">
-      <i class="bi bi-cart2"></i>
-      <div class="cartAmount">0</div>
-     </div> 
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div class="cartAmount">
+          <p id="cartnumber">0</p>
+        </div>
+      </div>
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="/html/products.html">Products</a>
           <a href="/html/About.html">About us</a>
+          <a href="/html/contact.html">Contacts</a>
+          <a href="/html/documentation.html">Documentation</a>
         </div>
       </div>
     </nav>
-    <!--This creates my boxes where my products is shown img class is for my image-->
+    <!--
+      This creates my boxes where my products is shown img class is for my image
+    -->
     <div class="container">
       <div class="item1">
         <img class="helmet1" src="/image/racing_helmet1.png""/>
@@ -99,26 +107,29 @@
     <footer>
       <div class="footeritem">
         <h3 class="footerh3">Store location</h3>
-        <p>Brompton Banks</p>
-        <p>Winwoods Grove</p>
-        <p>Pipers Copse</p>
-        <p>Twyford Dell</p>
+        <span class="spancolor">Brompton Banks</span>
+        <br>
+        <span class="spancolor">Winwoods Grove</span>
+        <br>
+        <span class="spancolor">Pipers Copse</span>
+        <br>
+        <span class="spancolor">Twyford Dell</span>
       </div>
       <div class="footeritem">
-        <h3>Open hours</h3> 
-        <p>10am-4:30pm</p>
+        <h3>Open hours</h3>
+        <span class="spancolor">10am-4:30pm</span>
       </div>
       <div class="footeritem">
         <h3 class="footerh3">Contact us</h3>
-        <p>emil.kivi.gbg22@amerikanskagymnasiet.se</p>
-        <p>808-485-4439</p>
+        <span class="spancolor">emil.kivi.gbg22@amerikanskagymnasiet.se</span>
+        <span class="spancolor">808-485-4439</span>
       </div>
       <div class="footeritem">
         <h3 class="footerh3">Follow us</h3>
         <a class="social" href="www.facebook.com">Facebook</a>
-        <br>
+        <br />
         <a class="social" href="www.instagram.com">Instagram</a>
-        <br>
+        <br />
         <a class="social" href="www.youtube.com">Youtube</a>
       </div>
     </footer>

@@ -1,211 +1,220 @@
 * {
   margin: 0;
 }
-/*this styles my navbar*/
+/*
+This styles my navbar
+*/
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 47px;
-    background-color: rgb(80, 80, 80);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 50;
-    }
-
-/*this positions my racecar logo to what i belive is the center*/
-.race  {
-      display: block;
-      margin-left: 43%;
-      }
-    
-/* this styles my menu button*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 47px;
+  background-color: rgb(80, 80, 80);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+}
+/*
+this positions my racecar logo to what i belive is the center
+*/
+.race {
+  display: block;
+  margin-left: 40%;
+}
+/* '
+this styles my menu button
+*/
 .dropbtn {
-    background-color: rgb(80,80,80);
-    color: white;
-    padding: 7px 17px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border: solid white 1px;
-    margin-bottom: 11px;
-  }
-  
-  /* when i hover over the menu button it changes background color*/
-  .dropbtn:hover {
-    background-color: rgb(87,87,87);
-  }
-  
-  /*when the button is pressed/focused on) it changes background color to white, text color to black and the border to*/  
-  .dropbtn:focus {
-    background-color: white ;
-    color: black;
-    border: solid black 1px;
-  }
-  
-  /*this positions the menu button where i want it to be.*/
-  .dropdown {
-    position: relative;
-    top: 6px;
-    right: 140px;
-  }
-  
-  /*This is for what drops down when the menu button is pressed, and it says to not display, to make it display when clicked i used js */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
-
-
-  /* container and both items styles my prudct boxes.*/
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .item1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
-    height: 400px;
-    margin-top: 100px;
-    box-shadow: 0 0 10px;
-  }
-
-  .item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
-    height: 400px;
-    margin-top: 25px;
-    box-shadow: 0 0 10px;
-  }
-  .f1{
-    height: 100px;
-    width: 300px;
-  }
-  
-  .helmet1 {
-    height: 300px;
-    width: 300px;
-  }
-
-  .glove {
-    height: 280px;
-    width: 240px;
-  }
-
-  .suit {
-    height: 280px;
-    width: 240px;
-  }
-  
-  .item1:hover .helmet1 {
-    -webkit-filter: brightness(120%); 
-  }
-
-  .item:hover .suit{
-    -webkit-filter: brightness(120%); 
-  }
-  .item:hover .glove{
-    -webkit-filter: brightness(120%); 
-  }
+  background-color: rgb(80,80,80);
+  color: white;
+  padding: 7px 17px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border: solid white 1px;
+  margin-bottom: 11px;
+}
+/*
+ when i hover over the menu button it changes background color
+*/
+.dropbtn:hover {
+  background-color: rgb(87,87,87);
+}
+/*
+When the button is pressed/focused on) it changes background color to white, 
+text color to black and the border to
+*/
+.dropbtn:focus {
+  background-color: white ;
+  color: black;
+  border: solid black 1px;
+}
+/*
+This positions the menu button where i want it to be.
+*/
+.dropdown {
+  position: relative;
+  top: 6px;
+  right: 140px;
+}
+/*
+This is for what drops down when the menu button is pressed,
+ and it says to not display, to make it display when clicked i used javascript 
+ */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {
+ background-color: #ddd;
+}
+.show {
+ display: block;
+}
+/* 
+container and both items styles my prudct boxes. I have 2 different items because 3 of my boxes
+had to be further down and the easiest solution was to put a top margin on it.
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.item1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 400px;
+  margin-top: 100px;
+  box-shadow: 0 0 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 400px;
+  margin-top: 25px;
+  box-shadow: 0 0 10px;
+}
 
 
 
-  .add {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #18181a;
-    color: #18181a;
-    display: inline-block;
-    width: 100px;
-    font-size: 15px;
-    line-height: 15px;
-    padding: 18px 18px 17px;
-    text-decoration: none;
-    cursor: pointer;
-    background: #fff;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .add span:first-child {
-    position: relative;
-    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-    z-index: 10;
-  }
-  
-  .add span:last-child {
-    color: rgb(255, 255, 255);
-    display: block;
-    position: absolute;
-    bottom: 0;
-    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
-    z-index: 100;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    transform: translateY(225%) translateX(-50%);
-    height: 14px;
-    line-height: 13px;
-  }
-  
-  .add:after {
-    content: "";
-    position: absolute;
-    bottom: -50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(122, 118, 118);
-    transform-origin: bottom center;
-    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
-    transform: skewY(9.3deg) scaleY(0);
-    z-index: 50;
-  }
-  
-  .add:hover:after {
-    transform-origin: bottom center;
-    transform: skewY(9.3deg) scaleY(2);
-  }
-  
-  .add:hover span:last-child {
-    transform: translateX(-50%) translateY(-100%);
-    opacity: 1;
-    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
-  }
+.f1{
+  height: 100px;
+  width: 300px;
+}
+.helmet1 {
+  height: 300px;
+  width: 300px;
+}
+.glove {
+  height: 280px;
+  width: 240px;
+}
+.suit {
+  height: 280px;
+  width: 240px;
+}
 
-  .item1:hover .add {
-    opacity: 1;
-  }
+/*
+This is a cool effect i found to make my product images a bit brighter when hovered on.
+*/
+.item1:hover .helmet1 {
+  -webkit-filter: brightness(120%);
+}
+.item:hover .suit{
+  -webkit-filter: brightness(120%);
+}
+.item:hover .glove{
+  -webkit-filter: brightness(120%);
+}
 
-  .item:hover .add {
-    opacity: 1;
-  }
+/*
+The add class styles my price and add to cart button under the product.
+*/
+.add {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  width: 100px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.add span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+.add span:last-child {
+  color: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+.add:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(122, 118, 118);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+.add:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+.add:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+.item1:hover .add {
+  opacity: 1;
+}
+.item:hover .add {
+  opacity: 1;
+}
 
+/*
+Positions the cart.
+*/
 .cart {
   position: relative;
   text-align: center;
@@ -216,6 +225,9 @@ nav {
   border-radius: 5px;
 }
 
+/*
+Positions the box that shows how many items is in the cart.
+*/
 .cartAmount {
   position: absolute;
   top: -5px;
@@ -235,9 +247,7 @@ footer {
   height: 200px;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
-
 .footeritem {
   margin-top: 20px;
   background-color: rgb(100, 100, 100);
@@ -245,23 +255,138 @@ footer {
   height: 70%;
   text-align: center;
 }
-
 .footerh3 {
   font-size: 30px;
 }
-
 .social {
   text-decoration: none;
   color: white;
-  }
+}
+.social:hover {
+  color: black;
+}
+/*
+#image1 id is for my slideshow images
+*/
+#image1 {
+  width: 100%;
+  height: 100%;
+}
+.spancolor {
+  color: white;
+}
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home {
+  background-color: rgb(212, 212, 212);
+}
 
-  .social:hover {
-    color: black;
-  }
+.slideshow {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  background-color: #f1f1f1;
+}
 
-  p{
-    color: white;
-  }
+/* Here i can change the width of my border and how much is shown */
+.slideshow {
+  --borderWidth: 16px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+/* This positions the border and decides the colors that it changes to and from. */
+.slideshow:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+/* This is the animation */
+@keyframes animatedgradient {
+  0% {
+      background-position: 0% 50%;
+ }
+  50% {
+      background-position: 100% 50%;
+ }
+  100% {
+      background-position: 0% 50%;
+ }
+}
 
-
-  
+/*
+Everything underneath styles my about document
+*/
+.containerabout{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.itemabout{
+  text-align: center;
+  background-color: #ffffff;
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+.h4doc {
+  font-size: 20px;
+}
+.containerdoc {
+  display: flex;
+  justify-content: space-around;
+}
+.docjs {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+.aboutinfo {
+  background-color: #ffffff;
+  margin-top: 100px;
+  width: 99%;
+  height: 200px;
+  box-shadow:0 0 5px;
+  text-align: center;
+  font-size: 24px;
+}
+.aboutrcth3 {
+  font-size: 40px;
+}
+.pabout{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.partner {
+  text-align: center;
+}
+.postnord {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 400px;
+  border: solid 3px white;
+}
+.founder {
+  text-align: center;
+  font-size: 80px;
+}
+.foundercontainer{
+  display: flex;
+  justify-content: center;
+}
