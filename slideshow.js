@@ -1,4 +1,4 @@
-// Make an array with each image to be included in the slideshow
+// Gör en array med varje bild som ska inkluderas i bildspelet
 var imgArray = [
     './image/Racing-Glove.png',
     './image/Racing-suit.png',
@@ -12,19 +12,22 @@ var imgArray = [
 
 ];
 var curIndex = 0;
-//How long an image should be displayed, each 1000 is 1 second
+
+//Hur länge en bild ska visas, varje 1000 är 1 sekund
 var imgDuration = 3000;
 
 function slideShow() {
-    /*The IMG taken with the id image1 will be equal to the object in 
-        the imgArray that has the position that curIndex specifies*/
+
+/*IMG:n som tas med id image1 kommer att vara lika med objektet i
+        imgArrayen som har positionen som curIndex specificerar*/
     document.getElementById('image1').src = imgArray[curIndex];
     curIndex++;
-    /*If curIndex becomes as long as the amount of objects in imgArray, 
-    curIndex restarts from the beginning so that the slide show restarts*/
+
+/*Om curIndex blir lika lång som antalet objekt i imgArray,
+    curIndex startar om från början så att bildspelet startar om*/
 
     if (curIndex == imgArray.length) { curIndex = 0; }
-    //Restarts the function after a certain time that is in imgDuration and causes a new image to appear
+//Startar om funktionen efter en viss tid som är i imgDuration och gör att en ny bild visas
 
     setTimeout("slideShow()", imgDuration);
 }

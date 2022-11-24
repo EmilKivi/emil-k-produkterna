@@ -1,10 +1,11 @@
-/*The first code is copied*/
+
+/*Den första koden kopieras*/
 
 
 
 
-/* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
+/* När användaren klickar på knappen,
+    växla mellan att dölja och visa rullgardinsmenyn */
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
@@ -26,22 +27,23 @@
 
 
 
-//This code is NOT copied
 
+//Denna kod är INTE kopierad
     
   let container = document.querySelectorAll('.add')
 
   var cartnumber = 0;
   for (let i=0; i < container.length; i++ ) {
-    /*When you click on one of the buttons that has the class add, 
-    a function is executed that changes the number at the cart image to the number of times you clicked*/
+ 
+/*När du klickar på en av knapparna som har klassen lagt till,
+    en funktion exekveras som ändrar numret vid varukorgsbilden till antalet gånger du klickade*/
 
     container[i].addEventListener('click',()=>{
       console.log("added to cart");
       cartnumber++
       console.log(cartnumber);
       var cartNumberText = String(cartnumber)
-      // Changes the contents of the tags with the id cartnumber to the value in cartNumberText
+// Ändrar innehållet i taggarna med id cartnumber till värdet i cartNumberText
       document.getElementById("cartnumber").innerHTML = cartNumberText;
      });
   };

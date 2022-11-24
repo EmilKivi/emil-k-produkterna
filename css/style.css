@@ -1,55 +1,112 @@
 * {
   margin: 0;
 }
+
 /*
 This styles my navbar
 */
+
+body {
+  /* Tar bort scrollbar från IE and Edge */
+  -ms-overflow-style: none;
+  /*Tar bort scrollbar från Firefox */
+  scrollbar-width: none;
+}
+/*Tar bort scrollbar från andra browsers*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width:100%;
-  height: 47px;
+  height: 2.9375em;
   background-color: rgb(80, 80, 80);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   z-index: 50;
 }
 /*
-This positions my racecar logo to where i want it to be.
+
+Detta placerar min racerbilslogga där jag vill att den ska vara.
 */
 .race {
   display: block;
-  margin-left: 40%;
+  margin-right: 40em;
 }
 
 .f1{
-  height: 100px;
-  width: 300px;
+  height: 6.25em;
+  width: 18.75em;
 }
+
+.f1index {
+  height: 6.25em;
+  width: 18.75em;
+}
+
+/*
+Jag var gjorde en ny klass för min navbar för alla sidor förutom 
+products för att det blev fel när man ändrade till windowed mode
+*/
+.raceindex {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+Positionerar Shopping carten.
+
+*/
+.cart {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  color: #18181a;
+  width: 2.5em;
+  padding: 0.4375em;
+  border-radius: 0.3125em;
+}
+
+/*
+Placerar rutan som visar hur många varor som finns i varukorgen.
+*/
+.cartAmount {
+  position: absolute;
+  top: -0.3125em;
+  right: -0.625em;
+  font-size: 0.8125em;
+  background-color: red;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+}
+
 /* '
-This styles my menu button
+
+Detta stilar min menyknapp
 */
 .dropbtn {
   background-color: rgb(80,80,80);
   color: white;
-  padding: 7px 17px;
-  font-size: 16px;
+  padding: 0.4375em 1.0625em;
+  font-size: 1em;
   border: none;
   cursor: pointer;
   border: solid white 1px;
   margin-bottom: 11px;
 }
-/*
- When i hover over the menu button it changes background color
-*/
+
 .dropbtn:hover {
   background-color: rgb(87,87,87);
 }
 /*
-When the menu button is pressed/focused on) it changes background color to white, 
-text color to black and the border to
+
+När menyknappen trycks in/fokuseras på) ändrar den bakgrundsfärgen till vit,
+textfärg till svart och ram till
 */
 .dropbtn:focus {
   background-color: white ;
@@ -57,7 +114,7 @@ text color to black and the border to
   border: solid black 1px;
 }
 /*
-This positions the menu button where i want it to be.
+Detta placerar menyknappen där jag vill att den ska vara.
 */
 .dropdown {
   position: relative;
@@ -65,8 +122,8 @@ This positions the menu button where i want it to be.
   right: 140px;
 }
 /*
-This is for what drops down when the menu button is pressed,
- and it says to not display, to make it display when clicked i used javascript 
+Detta är för det som rullas ner när menyknappen trycks ned,
+ och det står att inte visa, för att få det att visas när det klickas på jag använde javascript
  */
 .dropdown-content {
   display: none;
@@ -88,8 +145,9 @@ This is for what drops down when the menu button is pressed,
  display: block;
 }
 /* 
-Container and both items styles my prudct boxes. I have 2 different items because 3 of my boxes
-had to be further down and the easiest solution i knew was to put a top margin on it.
+Container och båda föremålen stilar mina prudct lådor. Jag har 2 olika saker eftersom 3 av mina lådor
+var tvungen att ligga längre ner och den enklaste lösningen jag visste 
+var att sätta en högre toppmarginal på den.
 */
 .container {
   display: flex;
@@ -117,7 +175,7 @@ had to be further down and the easiest solution i knew was to put a top margin o
   box-shadow: 0 0 10px;
 }
 /*
-  Helmet1 glove and suit is my products.
+Helmet1 handske och kostym är mina produkter.
 */
 
 .helmet1 {
@@ -134,8 +192,8 @@ had to be further down and the easiest solution i knew was to put a top margin o
 }
 
 /*
-This is a cool effect i found on the internet to make my product 
-images a bit brighter when hovered on.
+Detta är en cool effekt jag hittade på internet för att göra min produkt
+bilderna blir lite ljusare när du håller muspekaren på dem.
 */
 .item1:hover .helmet1 {
   -webkit-filter: brightness(120%);
@@ -148,8 +206,8 @@ images a bit brighter when hovered on.
 }
 
 /*
-The add class styles my price and add to cart button under the product. I searched online 
-for a cool hover effect and found one that changes text and background when hovered.
+Lägg till klass stilar mitt pris och lägg i kundvagn-knappen under produkten. Jag sökte på nätet
+för en cool svävningseffekt och hittade en som ändrar text och bakgrund när den svävar.
 */
 .add {
   position: relative;
@@ -216,35 +274,9 @@ for a cool hover effect and found one that changes text and background when hove
   opacity: 1;
 }
 
-/*
-Positions the cart.
-*/
-.cart {
-  position: relative;
-  text-align: center;
-  background-color: #fff;
-  color: #18181a;
-  width: 40px;
-  padding: 7px;
-  border-radius: 5px;
-}
 
 /*
-Positions the box that shows how many items is in the cart.
-*/
-.cartAmount {
-  position: absolute;
-  top: -5px;
-  right: -10px;
-  font-size: 13px;
-  background-color: red;
-  color: white;
-  padding: 4px;
-  border-radius: 3px;
-}
-
-/*
-everything with footer and social styles everything in my footer.
+allt med footer och sociala stilar allt i min footer.
 */
 footer {
   margin-top: 100px;
@@ -275,75 +307,6 @@ footer {
 .spancolor {
   color: white;
 }
-/*
-#image1 id is for my slideshow images
-*/
-#image1 {
-  width: 100%;
-  height: 100%;
-}
-
-
-h1 {
-  margin-top: 100px;
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.home {
-  background-color: rgb(255, 255, 255);
-}
-
-.slideshow {
-  width: 400px;
-  height: 400px;
-  margin-top: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
-  background-color: #f1f1f1;
-}
-
-/* Here i can change the width of my border and how much is shown */
-.slideshow {
-  --borderWidth: 16px;
-  background: #1D1F20;
-  position: relative;
-  border-radius: var(--borderWidth);
-}
-/* This positions the border and decides the colors that it changes to and from. */
-.slideshow:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-}
-/* This is the animation for the border*/
-@keyframes animatedgradient {
-  0% {
-      background-position: 0% 50%;
- }
-  50% {
-      background-position: 100% 50%;
- }
-  100% {
-      background-position: 0% 50%;
- }
-}
-
-.founder {
-  text-align: center;
-  font-size: 80px;
-}
-.foundercontainer{
-  display: flex;
-  justify-content: center;
-}
 
 .footeritemcontact {
   margin-top: 20px;
@@ -369,7 +332,7 @@ h1 {
 } 
 
 /*
-Its the same border animation used in the slideshow
+Det är samma border animation som används i bildspelet
 */
 .footercontact {
   --borderWidth: 16px;
@@ -408,8 +371,84 @@ Its the same border animation used in the slideshow
 
 
 /*
-Everything underneath styles my about document.
+#image1 id är för mina bildspelsbilder
 */
+#image1 {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home {
+  background-color: rgb(255, 255, 255);
+}
+
+.slideshow {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  background-color: #f1f1f1;
+}
+
+/* 
+Här kan jag ändra bredden på min ram och hur mycket som visas
+*/
+.slideshow {
+  --borderWidth: 16px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+/*
+Detta placerar border och bestämmer färgerna som den ändras till och från.
+*/
+.slideshow:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+/* 
+Detta är animationen för bordern
+*/
+@keyframes animatedgradient {
+  0% {
+      background-position: 0% 50%;
+ }
+  50% {
+      background-position: 100% 50%;
+ }
+  100% {
+      background-position: 0% 50%;
+ }
+}
+
+
+/*
+Allt under stilar mitt om-dokument.
+*/
+
+.founder {
+  text-align: center;
+  font-size: 80px;
+}
+.foundercontainer{
+  display: flex;
+  justify-content: center;
+}
 .containerabout{
   display: flex;
   justify-content: space-around;
