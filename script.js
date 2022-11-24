@@ -33,7 +33,8 @@
 
   var cartnumber = 0;
   for (let i=0; i < container.length; i++ ) {
-    //When you click on one of the buttons that has the class add, a function is executed that changes the number at the cart image to the number of times you clicked
+    /*When you click on one of the buttons that has the class add, 
+    a function is executed that changes the number at the cart image to the number of times you clicked*/
 
     container[i].addEventListener('click',()=>{
       console.log("added to cart");

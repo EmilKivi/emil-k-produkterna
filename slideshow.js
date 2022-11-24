@@ -16,10 +16,12 @@ var curIndex = 0;
 var imgDuration = 3000;
 
 function slideShow() {
-    //The IMG taken with the id image1 will be equal to the object in the imgArray that has the position that curIndex specifies
+    /*The IMG taken with the id image1 will be equal to the object in 
+        the imgArray that has the position that curIndex specifies*/
     document.getElementById('image1').src = imgArray[curIndex];
     curIndex++;
-    //If curIndex becomes as long as the amount of objects in imgArray, curIndex restarts from the beginning so that the slide show restarts
+    /*If curIndex becomes as long as the amount of objects in imgArray, 
+    curIndex restarts from the beginning so that the slide show restarts*/
 
     if (curIndex == imgArray.length) { curIndex = 0; }
     //Restarts the function after a certain time that is in imgDuration and causes a new image to appear
